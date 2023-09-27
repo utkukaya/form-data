@@ -3,7 +3,12 @@
   box-sizing: border-box;
 }
 body {
-  background: #112034 !important;
+  background-image: url("./bg-image.jpg") !important;
+  /* background: #112034 !important; */
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   min-height: 100vh;
   display: flex;
   font-weight: 400;
