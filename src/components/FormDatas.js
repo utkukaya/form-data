@@ -116,7 +116,6 @@ function FormDatas() {
                     </div>
                 )}
             </div>
-            <BuyMeACoffeeButton />
         </form>
     );
 }

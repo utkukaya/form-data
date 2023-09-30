@@ -4,6 +4,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import FormDatas from './components/FormDatas'
 import { HelmetProvider } from 'react-helmet-async';
+import Payment from './components/Payment'
 
 function App() {
   // ReactGA.initialize('G-X13FT1EE94'); // Buraya kendi Google Analytics Kimliğinizi ekleyin
@@ -14,7 +15,7 @@ function App() {
 
       <Router>
         <div className="App">
-          {/* <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+          <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
          
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -23,17 +24,21 @@ function App() {
                   <Link className="nav-link" to={'/form-data'}>
                     Form Data
                   </Link>
+                  <Link className="nav-link" to={'/payment'}>
+                    Payment
+                  </Link>
                 </li>
 
               </ul>
             </div>
           </div>
-        </nav> */}
+        </nav>
           <div className="auth-wrapper">
             <div className="auth-inner">
               <Routes>
                 <Route exact path="/" element={<FormDatas />} />
                 <Route path="/form-data" element={<FormDatas />} />
+                <Route path="/payment" element={<Payment />} />
               </Routes>
             </div>
           </div>
