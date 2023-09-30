@@ -3,12 +3,18 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import FormDatas from './components/FormDatas'
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
+  // ReactGA.initialize('G-X13FT1EE94'); // Buraya kendi Google Analytics Kimliğinizi ekleyin
+  const helmetContext = {};
+
   return (
-    <Router>
-      <div className="App">
-        {/* <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <HelmetProvider context={helmetContext}>
+
+      <Router>
+        <div className="App">
+          {/* <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
          
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -23,17 +29,18 @@ function App() {
             </div>
           </div>
         </nav> */}
-        <div className="auth-wrapper">
-          <div className="auth-inner">
-            <Routes>
-              <Route exact path="/" element={<FormDatas />} />
-              <Route path="/form-data" element={<FormDatas />} />
-              {/* <Route path="/sign-up" element={<SignUp />} /> */}
-            </Routes>
+          <div className="auth-wrapper">
+            <div className="auth-inner">
+              <Routes>
+                <Route exact path="/" element={<FormDatas />} />
+                <Route path="/form-data" element={<FormDatas />} />
+              </Routes>
+            </div>
           </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </HelmetProvider>
+
   )
 }
 export default App
