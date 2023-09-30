@@ -15,24 +15,26 @@ function App() {
 
       <Router>
         <div className="App">
-          <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-          <div className="container">
-         
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/form-data'}>
-                    Form Data
-                  </Link>
-                  <Link className="nav-link" to={'/payment'}>
-                    Payment
-                  </Link>
-                </li>
+          <nav className="navbar navbar-expand navbar-light fixed-top">
+            <div className="container">
 
-              </ul>
+              <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item">
+                    <Link className="nav-link" to={'/form-data'}>
+                      Form Data
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={'/payment'}>
+                      Payment
+                    </Link>
+                  </li>
+
+                </ul>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
           <div className="auth-wrapper">
             <div className="auth-inner">
               <Routes>
