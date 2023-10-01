@@ -36,9 +36,10 @@ function FormDatas() {
                 method: 'POST',
                 body: JSON.stringify(requestData),
                 headers: {
-                    'Content-Type': "application/json"
+                    // 'Content-Type': "application/json"
+                    'Content-Type': 'text/plain;charset=utf-8',
                 },
-                mode: 'no-cors',
+                // mode: 'no-cors',
             })
         } catch (error) {
             setSubmitting(false)
