@@ -1,9 +1,10 @@
 import React from "react";
+import { urlOfBuymeacoffe } from "../helper/constants";
 
 function BuyMeACoffeeButton() {
     return (
         <div style={{textAlign: "center", marginTop: 15}}>
-            <a href="https://www.buymeacoffee.com/utkukaya44s">
+            <a href={urlOfBuymeacoffe}>
                 <img
                     style={{ height: "50px" }}
                     alt="Buy Me a Coffee Widget"

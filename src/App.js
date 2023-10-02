@@ -17,7 +17,7 @@ function App() {
       <Router>
         {isWebsiteVisible ?
           <div className="App">
-            <nav className="navbar navbar-expand navbar-light fixed-top">
+            {/* <nav className="navbar navbar-expand navbar-light fixed-top">
               <div className="container">
 
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -36,7 +36,7 @@ function App() {
                   </ul>
                 </div>
               </div>
-            </nav>
+            </nav> */}
             <div className="auth-wrapper">
               <div className="auth-inner">
                 <Routes>
